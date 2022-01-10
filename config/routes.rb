@@ -15,6 +15,9 @@ Rails.application.routes.draw do
   ### Comments connected to each part
   # Nb. Needs to be worked on more
   # Issue: connecting comments associated with the param id
+
+  post "/posts", to: "posts#create"
+
   get "/parks/:id/comments", to: "posts#show", as: "comment"
 
   ### Authentication routing

@@ -41,6 +41,17 @@ GET http://localhost:3000/parks/1/comments/
 #     "password": "nottherightpassword"
 #   }
 # }
+POST http://localhost:3000/posts
+Content-Type: application/json
+Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDE3ODM1OTl9.ErqUKlQ3WCE0RrahBwQ8GDT9aV0zyRYiKwKFyDrNnUY"
+
+{
+  "user_id": 1,
+  "park_id": 1 ,
+  "comment": "This park is great",
+  "rating": 5
+  }
+
 
 ### REGISTERING a new user
 # If this was sent again, request will fail with code 422
