@@ -1,6 +1,5 @@
 class AuthController < ApplicationController
   # TO LOGIN with a user
-  before_action :authorized
   def signin
     user = User.signin(auth_params[:signin]).first
     if user&.authenticate(auth_params[:password])

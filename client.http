@@ -43,11 +43,10 @@ GET http://localhost:3000/parks/1/comments/
 # }
 POST http://localhost:3000/posts
 Content-Type: application/json
-Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDE3ODM1OTl9.ErqUKlQ3WCE0RrahBwQ8GDT9aV0zyRYiKwKFyDrNnUY"
+Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDE3OTkzMDh9.zssj5h5FVQnAcAK_DcTmrnLE4NfzKA4iLCPQ4xlXzP4"
 
-{
-  "user_id": 1,
-  "park_id": 1 ,
+{ "user_id": 2,
+  "park_id": 1,
   "comment": "This park is great",
   "rating": 5
   }
@@ -71,7 +70,7 @@ Content-Type: application/json
 
 {
   "email": "test1@testing.com",
-  "username": "test@user1",
+  "username": "testuser1",
   "password": "test-password2",
   "password_confirmation": "test-password2"
 }

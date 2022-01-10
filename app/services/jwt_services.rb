@@ -11,7 +11,7 @@ class JwtServices
   def self.decode(token)
     begin
       payload = JWT.decode(token, @secret, true)
-       npayload[0]
+      payload[0]
     rescue Exception=> e
       pp e
       nil
