@@ -11,7 +11,7 @@ if Feature.count == 0
     Feature.create(name: feature)
     puts "Created #{feature} feature"
   end
-  puts "Created features"
+end
 
 if Category.count == 0
   categories = ["all", "community", "child friendly", "dog park", "large park", "nature", "skatepark", "sports"]
@@ -52,4 +52,4 @@ if Post.count == 0
   puts "Created post for park"
 end
 
-Park.first.picture.attach(io: File.open(File.join(Rails.root, "app/assets/images/testpic.jpeg")), filename: "testpic.jpeg")
+Park.first.picture.attach(io: File.open("app/assets/images/testpic.jpeg"), filename: "testpic.jpeg", content_type: "image/jpg")
