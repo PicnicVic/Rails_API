@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 if Feature.count == 0
-  features = ["all", "accessible", "basketball", "bbq", "bins", "botanical", "cultural", "educational", "events", "exercise", "fenced", "food nearby", "farm", "grassed", "heritage", "lake", "market", "playground", "river", "seating", "shelter", "skate", "toilets", "velodrome"]
+  features = ["all", "accessible", "basketball", "bbq", "bins", "botanical", "cultural", "educational", "events", "exercise", "fenced", "food nearby", "farm", "grassed", "heritage", "lake", "market", "playground", "seating", "shelter", "skate", "toilets", "velodrome"]
   features.each do |feature|
     Feature.create(name: feature)
     puts "Created #{feature} feature"
@@ -62,8 +62,9 @@ if Post.count == 0
   Post.create(user_id: rand(2) + 1, park_id: rand(Park.count) + 1, comment: "So many flowers!!! So many colours. So beautiful", rating: 5)
   Post.create(user_id: rand(2) + 1, park_id: rand(Park.count) + 1, comment: "Pretty meh park", rating: 1)
   Post.create(user_id: rand(2) + 1, park_id: rand(Park.count) + 1, comment: "Worse park is the history of all parks!", rating: 2)
+  Post.create(user_id: rand(2) + 1, park_id: rand(Park.count) + 1, comment: "This park's playground has no fences and isn't appropriate for children.", rating: 2)
   Post.create(user_id: rand(2) + 1, park_id: rand(Park.count) + 1, comment: "This is a park that exists", rating: 2)
-  puts "Created post for park"
+  puts "I got yelled at for having my dog off leash."
 end
 
 <<<<<<< HEAD
